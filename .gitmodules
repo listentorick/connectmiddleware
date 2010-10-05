@@ -1,0 +1,6 @@
+[submodule "lib/mongodataprovider"]
+	path = lib/mongodataprovider
+	url = git://github.com/listentorick/mongodataprovider.git
+[submodule "lib/connect"]
+	path = lib/connect
+	url = git://github.com/senchalabs/connect.git
