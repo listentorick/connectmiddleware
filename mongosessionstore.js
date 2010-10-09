@@ -40,7 +40,7 @@ sys.inherits(MongoSessionStore, Store);
  */
 
 MongoSessionStore.prototype.get = function(hash, fn){
-    this._provider.findOne(hash, function(err, data){
+    this._provider.findOne({_id: hash}, function(err, data){
         try {
             if (data) delete data._id;
             // TODO: fail if expired
